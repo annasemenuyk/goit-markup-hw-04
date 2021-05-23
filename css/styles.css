@@ -352,7 +352,7 @@ p {
 }
 .regular-clients-icon-link:hover .regular-clients-logo-icon,
 .regular-clients-icon-link:focus .regular-clients-logo-icon {
-  fill: var (--acsent-color);
+  fill: rgba(33, 150, 243, 1);
 }
 /*Подвал страницы*/
 .footer-contacts {
