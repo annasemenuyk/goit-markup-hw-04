@@ -46,7 +46,6 @@ p {
   display: flex;
   align-items: center;
 }
-
 .logo {
   color: var(--acsent-color);
   font-family: 'Raleway', sans-serif;
@@ -102,15 +101,36 @@ p {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
+.upline-contacts-icon {
+  margin: 0 auto;
+  margin-right: 10px;
+  fill: var(--secondary-color);
+}
 .contacts:hover,
 .contacts:focus {
   color: var(--acsent-color);
 }
+.contacts:hover .upline-contacts-icon,
+.contacts:focus .upline-contacts-icon {
+  fill: var(--acsent-color);
+}
+
 /* Эффективные решения для вашего бизнеса */
 .section {
   padding-top: 200px;
   padding-bottom: 200px;
   background: #2f303a;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  outline: 1px solid #000000;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/fill/new_photo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /*rgba(47, 48, 58, 0.4);*/
 }
 .main-section {
   text-align: center;
@@ -161,6 +181,17 @@ p {
 .specificsh-list .item:not(:first-child) {
   margin-left: 30px;
 }
+.specificsh-icon {
+  content: '';
+  display: block;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+}
+
 .specificsh {
   margin-top: 0;
   margin-bottom: 10px;
@@ -236,8 +267,7 @@ p {
   color: var(--title-text-color);
 }
 .workers {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .name {
@@ -254,7 +284,75 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
   color: var(--secondary-color);
+}
+.profession-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.profession-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+.profession-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-acsent-color);
+  border-radius: 50%;
+}
+.profession-icon-link:hover,
+.profession-icon-link:focus {
+  background-color: var(--acsent-color);
+}
+.profession-icon-link:hover .profession-social-icon,
+.profession-icon-link:focus .profession-social-icon {
+  fill: var(--secondary-acsent-color);
+}
+/* Постоянные клиенты */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.regular-clients {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.regular-clients-list {
+  display: flex;
+}
+.regular-clients-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 170px;
+  border-radius: 4px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  fill: rgba(175, 177, 184, 1);
+}
+.regular-clients-list .item:not(:first-child) {
+  margin-left: 30px;
+}
+.regular-clients-icon-link:hover,
+.regular-clients-icon-link:focus {
+  border-radius: 4px;
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+.regular-clients-icon-link:hover .regular-clients-logo-icon,
+.regular-clients-icon-link:focus .regular-clients-logo-icon {
+  fill: var (--acsent-color);
 }
 /*Подвал страницы*/
 .footer-contacts {
@@ -353,6 +451,8 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-acsent-color);
   background: var(--acsent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filters-page li:not(:first-child) {
   margin-left: 8px;
