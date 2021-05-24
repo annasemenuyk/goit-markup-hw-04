@@ -368,6 +368,13 @@ p {
   margin-top: 0;
   margin-bottom: 20px;
 }
+.footer-contacts-main {
+  display: flex;
+  align-items: center;
+}
+.down-social-icon {
+  margin-left: 70px;
+}
 .logo-down {
   display: block;
   font-family: 'Raleway', sans-serif;
@@ -412,6 +419,36 @@ p {
 .contacts-down:focus {
   text-decoration: none;
   color: var(--acsent-color);
+}
+.contacts-down-social {
+  display: flex;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-acsent-color);
+}
+.contacts-down-social-list {
+  display: flex;
+}
+.contacts-down-social-icon-item:not(:first-child) {
+  margin-left: 10px;
+}
+.contacts-down-social-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--secondary-acsent-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.contacts-down-social-icon-link:hover,
+.contacts-down-social-icon-link:focus {
+  background-color: rgba(33, 150, 243, 1);
 }
 /*Портфоліо*/
 /*.hidden {
